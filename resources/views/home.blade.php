@@ -72,4 +72,17 @@
         </div>
     </div>
 </div>
+
+<div class="projects-worked-on-wrapper">
+    <div class="container-lg">
+        <span class="projects-worked-on-title "><span class="tag-icon"></span>{{ __('Projects I have worked on') }}</span>
+    </div>
+    <div class="projects-worked-on-slider">
+        <img src="{{ url('storage/images/logos/amf-logo.webp') }}" alt="Image 1">
+        <img src="{{ url('storage/images/logos/balticsport-logo.png') }}" alt="Image 2">
+        <img src="{{ url('storage/images/logos/brew-company-logo.webp') }}" alt="Image 3">
+        <img src="{{ url('storage/images/logos/deoveritas-logo.png') }}" alt="Image 4">
+        <img src="{{ url('storage/images/logos/lvm-logo.png') }}" alt="Image 5">
+    </div>
+</div>
 @endsection
