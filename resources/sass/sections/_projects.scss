@@ -1,3 +1,4 @@
+// Projects I have worked on
 .projects-worked-on-wrapper {
     margin: 90px auto;
     max-width: 1920px;
@@ -19,6 +20,72 @@
             max-height: 75px;
             margin-left: 100px;
             margin-right: 100px;
+        }
+    }
+}
+
+// Recent work
+.recent-projects-wrapper {
+    margin: 90px auto;
+
+    .recent-projects-title {
+        display: inline-block;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: $primary_two_white;
+    }
+
+    .projects {
+        margin-top: 40px;
+
+        .project {
+            padding: calc(1.5rem * 0.5);
+
+            .project-content {
+                background-color: grey;
+                border-radius: 12px;
+                min-height: 300px;
+                position: relative;
+                overflow: hidden;
+
+                .overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: $black-600;
+                    opacity: 0;
+                    transition: opacity 0.3s ease;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .title {
+                    color: $primary_two_white;
+                    font-size: 1.5rem;
+                    text-align: center;
+                    transform: translateY(20px);
+                    opacity: 0;
+                    transition: transform 0.3s ease, opacity 0.3s ease;
+                }
+
+                &:hover {
+                    .overlay {
+                        opacity: 1;
+                    }
+
+                    img {
+                        transform: scale(1.1);
+                    }
+
+                    .title {
+                        transform: translateY(0);
+                        opacity: 1;
+                    }
+                }
+            }
         }
     }
 }

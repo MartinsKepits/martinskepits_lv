@@ -85,4 +85,32 @@
         <img src="{{ url('storage/images/logos/lvm-logo.png') }}" alt="Image 5">
     </div>
 </div>
+
+<div class="recent-projects-wrapper container-lg">
+    <span class="recent-projects-title "><span class="tag-icon"></span>{{ __('My recent projects') }}</span>
+
+    <div class="projects row">
+        <div class="project col-md-6">
+            <div class="project-content">
+                <div class="overlay">
+                    <h2 class="title">Visual Design</h2>
+                </div>
+            </div>
+        </div>
+        <div class="project col-md-6">
+            <div class="project-content">
+                <div class="overlay">
+                    <h2 class="title">Magento Demo</h2>
+                </div>
+            </div>
+        </div>
+        <div class="project col-md-6">
+            <div class="project-content">
+                <div class="overlay">
+                    <h2 class="title">Larvel Demo</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 @endsection
