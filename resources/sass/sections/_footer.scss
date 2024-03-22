@@ -85,9 +85,27 @@
             width: max-content;
 
             a {
+                position: relative;
                 text-decoration: none;
                 color: $primary_one_black;
                 font-weight: 700;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 2px;
+                    border-radius: 100px;
+                    background-color: $primary_one_black;
+                    opacity: 0;
+                    transition: all 0.2s;
+                }
+
+                &:hover::before {
+                    opacity: 1;
+                }
             }
         }
     }
@@ -131,9 +149,9 @@
 
     .footer-copyright,
     .footer-build-by {
-        font-size: 13px;
-        font-weight: 700;
-        color: $primary_two_white;
+        font-size: 14px;
+        font-weight: 500;
+        color: $primary_one_black;
     }
 
     .footer-build-by span {
@@ -144,11 +162,11 @@
         position: relative;
         z-index: 1;
         text-decoration: none;
-        color: $primary_two_white;
+        color: $primary_one_black;
         text-transform: uppercase;
         font-weight: 900;
         margin: 0 12.5px;
-        transition: color 0.3s ease, border-bottom-width 0.3s ease,
+        transition: color 0.2s ease, border-bottom-width 0.3s ease,
             padding-left 0.3s ease;
 
         &::before {
@@ -158,12 +176,12 @@
             left: 0;
             width: 0;
             height: 2px;
-            background-color: $primary_one_black;
+            background-color: $primary_two_white;
             transition: width 0.3s ease;
         }
 
         &:hover {
-            color: $primary_one_black;
+            color: $primary_two_white;
 
             &::before {
                 width: 100%;
