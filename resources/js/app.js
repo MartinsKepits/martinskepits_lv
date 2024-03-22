@@ -3,3 +3,4 @@ import "./navbar";
 import "./hero-bg-animation";
 import "./about-me-cards";
 import "./projects";
+import "./footer";
