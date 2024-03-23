@@ -19,7 +19,7 @@
 </div>
 
 <div id="about-me" class="about-me-wrapper">
-    <div class="about-me-text container-lg">
+    <div class="about-me-text container-lg px-4">
         <h2>{{ __('Hi, I’m Mārtiņš. Nice to meet you.') }}</h2>
         <p>{{ __('Since 3 years ago when I started creating websites, online stores. 
                     I have not forgotten that I do this to help large or small companies 
@@ -71,7 +71,7 @@
 </div>
 
 <div class="projects-worked-on-wrapper">
-    <div class="container-lg">
+    <div class="container-lg px-4">
         <span class="projects-worked-on-title "><span class="tag-icon"></span>{{ __('Projects I have worked on') }}</span>
     </div>
     <div class="projects-worked-on-slider">
@@ -83,7 +83,7 @@
     </div>
 </div>
 
-<div id="projects" class="recent-projects-wrapper container-lg">
+<div id="projects" class="recent-projects-wrapper container-lg px-4">
     <span class="recent-projects-title "><span class="tag-icon"></span>{{ __('My recent projects') }}</span>
 
     <div class="projects row">

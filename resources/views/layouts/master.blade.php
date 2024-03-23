@@ -13,7 +13,7 @@
 
 <body class="antialiased">
     <nav class="navbar navbar-expand-xxl">
-        <div class="container-lg">
+        <div class="container-lg px-4">
             <div class="navbar-col-left col-lg-3 col-6">
                 <a href="/" class="navbar-logo">
                     <img src="{{ url('storage/images/mk-logo.webp') }}" alt="Martins Kepits website logo" />
@@ -65,7 +65,7 @@
     <footer class="footer">
         <img class="footer-bg" src="{{ url('storage/images/footer-bg.webp') }}" alt="">
         <div class="footer-content">
-            <div class="container-lg">
+            <div class="container-lg px-4">
                 <div class="row footer-row-one">
                     <div class="col-md-8 col-sm-12">
                         <h3 class="footer-heading">{{ __('Let’s Collaborate!') }}</h3>
