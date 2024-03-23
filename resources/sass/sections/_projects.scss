@@ -1,6 +1,6 @@
 // Projects I have worked on
 .projects-worked-on-wrapper {
-    margin: 90px auto;
+    padding-top: 90px;
     max-width: 1920px;
     overflow-x: hidden;
 
@@ -26,7 +26,8 @@
 
 // Recent work
 .recent-projects-wrapper {
-    margin: 90px auto;
+    padding-top: 90px;
+    padding-bottom: 90px;
 
     .recent-projects-title {
         display: inline-block;
