@@ -27,8 +27,8 @@
                 margin-top: 15px;
             }
 
-            img {
-                width: 25px;
+            i {
+                font-size: 1.5rem;
                 margin-right: 8px;
             }
 
@@ -39,6 +39,9 @@
                 color: $primary_one_black;
                 font-family: sans-serif;
                 position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
 
                 &::after {
                     content: "";
@@ -70,9 +73,12 @@
             font-weight: 700;
             color: $primary_one_black;
             width: max-content;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
-            img {
-                width: 25px;
+            i {
+                font-size: 1.5rem;
                 margin-right: 8px;
             }
         }

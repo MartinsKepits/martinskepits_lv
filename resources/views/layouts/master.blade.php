@@ -16,14 +16,14 @@
         <div class="container-lg">
             <div class="navbar-col-left col-lg-3 col-6">
                 <a href="/" class="navbar-logo">
-                    <img src="{{ url('storage/images/mk-logo.png') }}" alt="Martins Kepits website logo" />
+                    <img src="{{ url('storage/images/mk-logo.webp') }}" alt="Martins Kepits website logo" />
                 </a>
             </div>
 
             <div class="navbar-col-center col-lg-6">
                 <div class="menu-header px-4">
                     <a href="/" class="menu-logo">
-                        <img src="{{ url('storage/images/mk-logo.png') }}" alt="Martins Kepits website logo" />
+                        <img src="{{ url('storage/images/mk-logo.webp') }}" alt="Martins Kepits website logo" />
                     </a>
                     <div class="navbar-toggle">
                         <div class="line line-1"></div>
@@ -39,10 +39,10 @@
                 </div>
 
                 <div class="menu-footer">
-                    <a href="#Phone">Phone</a>
-                    <a href="#Email">Email</a>
-                    <a href="#LinkedIn">LinkedIn</a>
-                    <a href="#Github">Github</a>
+                    <a href="#Phone"><i class="fa-solid fa-phone"></i></a>
+                    <a href="#Email"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="#LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#Github"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
 
@@ -63,20 +63,20 @@
     </main>
 
     <footer class="footer">
-        <img class="footer-bg" src="{{ url('storage/images/footer-bg.png') }}" alt="">
+        <img class="footer-bg" src="{{ url('storage/images/footer-bg.webp') }}" alt="">
         <div class="footer-content">
             <div class="container-lg">
                 <div class="row footer-row-one">
                     <div class="col-md-8 col-sm-12">
                         <h3 class="footer-heading">{{ __('Let’s Collaborate!') }}</h3>
                         <ul class="footer-contacts">
-                            <li class="footer-contact"><a href=""><img src="{{ url('storage/images/email.png') }}" />martinskepitslv@gmail.com</a></li>
-                            <li class="footer-contact"><a href=""><img src="{{ url('storage/images/phone.png') }}" />+371 26984195</a></li>
+                            <li class="footer-contact"><a href=""><i class="fa-solid fa-envelope"></i>martinskepitslv@gmail.com</a></li>
+                            <li class="footer-contact"><a href=""><i class="fa-solid fa-phone"></i>+371 26984195</a></li>
                         </ul>
                     </div>
                     <div class="col-md-4 col-sm-12">
                         <div class="footer-social-links">
-                            <span class="footer-social-links-heading"><img src="{{ url('storage/images/plane.png') }}" />{{ __('Follow Me') }}</span>
+                            <span class="footer-social-links-heading"><i class="fa-regular fa-paper-plane"></i>{{ __('Follow Me') }}</span>
                             <ul class="footer-social-links">
                                 <li><a href="">Github</a></li>
                                 <li><a href="">LinkedIn</a></li>
