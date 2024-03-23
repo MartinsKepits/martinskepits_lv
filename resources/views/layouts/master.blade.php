@@ -32,22 +32,22 @@
                     </div>
                 </div>
                 <div class="menu-links px-4 py-5 px-lg-0 py-lg-0">
-                    <a href="#next-section" class="menu-link">{{ __('Home') }}</a>
+                    <a href="/" class="menu-link">{{ __('Home') }}</a>
                     <a href="#about-me" class="menu-link">{{ __('About me') }}</a>
                     <a href="#projects" class="menu-link">{{ __('Projects') }}</a>
-                    <a href="#contact" class="menu-link">{{ __('Contact') }}</a>
+                    <a href="/contact" class="menu-link">{{ __('Contact') }}</a>
                 </div>
 
                 <div class="menu-footer">
-                    <a href="#Phone"><i class="fa-solid fa-phone"></i></a>
-                    <a href="#Email"><i class="fa-solid fa-envelope"></i></a>
-                    <a href="#LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#Github"><i class="fa-brands fa-github"></i></a>
+                    <a href="tel:+37126984195"><i class="fa-solid fa-phone"></i></a>
+                    <a href="mailto:martinskepitslv@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/m%C4%81rti%C5%86%C5%A1-%C4%B7ep%C4%ABts-6a1a85245/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/MartinsKepits" target="_blank"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
 
             <div class="navbar-col-right col-lg-3 col-6">
-                <a href="#contact" class="contact-me-btn">{{ __('Contact Me') }}</a>
+                <a href="/contact" class="contact-me-btn">{{ __('Contact Me') }}</a>
                 <div class="navbar-toggle">
                     <div class="line line-1"></div>
                     <div class="line line-transition line-2"></div>
@@ -70,16 +70,16 @@
                     <div class="col-md-8 col-sm-12">
                         <h3 class="footer-heading">{{ __('Let’s Collaborate!') }}</h3>
                         <ul class="footer-contacts">
-                            <li class="footer-contact"><a href=""><i class="fa-solid fa-envelope"></i>martinskepitslv@gmail.com</a></li>
-                            <li class="footer-contact"><a href=""><i class="fa-solid fa-phone"></i>+371 26984195</a></li>
+                            <li class="footer-contact"><a href="mailto:martinskepitslv@gmail.com"><i class="fa-solid fa-envelope"></i>martinskepitslv@gmail.com</a></li>
+                            <li class="footer-contact"><a href="tel:+37126984195"><i class="fa-solid fa-phone"></i>+371 26984195</a></li>
                         </ul>
                     </div>
                     <div class="col-md-4 col-sm-12">
                         <div class="footer-social-links">
                             <span class="footer-social-links-heading"><i class="fa-regular fa-paper-plane"></i>{{ __('Follow Me') }}</span>
                             <ul class="footer-social-links">
-                                <li><a href="">Github</a></li>
-                                <li><a href="">LinkedIn</a></li>
+                                <li><a href="https://github.com/MartinsKepits" target="_blank">Github</a></li>
+                                <li><a href="https://www.linkedin.com/in/m%C4%81rti%C5%86%C5%A1-%C4%B7ep%C4%ABts-6a1a85245/" target="_blank">LinkedIn</a></li>
                             </ul>
                         </div>
                     </div>
@@ -97,10 +97,10 @@
                         </div>
                         <div class="footer-menu-col col-lg-6 col-md-12">
                             <div class="footer-menu">
-                                <a href="#next-section" class="menu-link">{{ __('Home') }}</a>
+                                <a href="/" class="menu-link">{{ __('Home') }}</a>
                                 <a href="#about-me" class="menu-link">{{ __('About me') }}</a>
                                 <a href="#projects" class="menu-link">{{ __('Projects') }}</a>
-                                <a href="#contact" class="menu-link">{{ __('Contact') }}</a>
+                                <a href="/contact" class="menu-link">{{ __('Contact') }}</a>
                             </div>
                             <div class="navbar-toggle">
                                 <div class="line line-1"></div>

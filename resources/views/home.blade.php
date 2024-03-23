@@ -83,7 +83,7 @@
     </div>
 </div>
 
-<div class="recent-projects-wrapper container-lg">
+<div id="projects" class="recent-projects-wrapper container-lg">
     <span class="recent-projects-title "><span class="tag-icon"></span>{{ __('My recent projects') }}</span>
 
     <div class="projects row">
