@@ -1,0 +1,26 @@
+@font-face {
+    src: url("./fonts/Jost/Jost-Black.woff2") format("woff2"),
+        url("./fonts/Jost/Jost-Black.woff") format("woff");
+    font-family: "Jost";
+}
+
+@font-face {
+    src: url("./fonts/Raleway/Raleway-Black.woff2") format("woff2"),
+        url("./fonts/Raleway/Raleway-Black.woff") format("woff");
+    font-family: "Raleway";
+    font-weight: 900;
+}
+
+@font-face {
+    src: url("./fonts/Raleway/Raleway-Bold.woff2") format("woff2"),
+        url("./fonts/Raleway/Raleway-Bold.woff") format("woff");
+    font-family: "Raleway";
+    font-weight: 700;
+}
+
+@font-face {
+    src: url("./fonts/Raleway/Raleway-Medium.woff2") format("woff2"),
+        url("./fonts/Raleway/Raleway-Medium.woff") format("woff");
+    font-family: "Raleway";
+    font-weight: 500;
+}

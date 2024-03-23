@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
-
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
-@import "variables/variables.scss", "typography/typography.scss", "base/base",
-    "sections/navbar", "sections/homepage-hero.scss", "sections/about-me",
-    "sections/projects", "sections/footer";
+@import "variables/variables", "fonts/fonts", "typography/typography",
+    "base/base", "sections/navbar", "sections/homepage-hero",
+    "sections/about-me", "sections/projects", "sections/footer";

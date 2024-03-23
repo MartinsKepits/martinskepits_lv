@@ -106,8 +106,8 @@ function calculateSigns() {
             const angle = Math.atan2(ay, ax);
             const targetScale = d < hyp + sign.width ? 2 : 1;
 
-            TweenMax.to(sign, 0.3, { scale: targetScale });
-            TweenMax.to(sign, 0.3, {
+            gsap.to(sign, 0.3, { scale: targetScale });
+            gsap.to(sign, 0.3, {
                 x: Math.cos(angle) * hyp,
                 y: Math.sin(angle) * hyp,
             });
@@ -130,7 +130,7 @@ function handleMouseLeave() {
     signs.forEach((row) => {
         row.forEach((sign) => {
             if (!mouseOver) {
-                TweenMax.to(sign, 0.3, { x: 0, y: 0, scale: 1 });
+                gsap.to(sign, 0.3, { x: 0, y: 0, scale: 1 });
             }
         });
     });
