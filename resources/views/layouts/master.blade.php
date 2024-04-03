@@ -15,14 +15,14 @@
     <nav class="navbar navbar-expand-xxl">
         <div class="container-lg px-4">
             <div class="navbar-col-left col-lg-3 col-6">
-                <a href="/" class="navbar-logo">
+                <a href="{{ route('home') }}" class="navbar-logo">
                     <img src="{{ url('storage/images/mk-logo.webp') }}" alt="Martins Kepits website logo" />
                 </a>
             </div>
 
             <div class="navbar-col-center col-lg-6">
                 <div class="menu-header px-4">
-                    <a href="/" class="menu-logo">
+                    <a href="{{ route('home') }}" class="menu-logo">
                         <img src="{{ url('storage/images/mk-logo.webp') }}" alt="Martins Kepits website logo" />
                     </a>
                     <div class="navbar-toggle">
@@ -32,10 +32,10 @@
                     </div>
                 </div>
                 <div class="menu-links px-4 py-5 px-lg-0 py-lg-0">
-                    <a href="/" class="menu-link">{{ __('Home') }}</a>
-                    <a href="#about-me" class="menu-link">{{ __('About me') }}</a>
-                    <a href="#projects" class="menu-link">{{ __('Projects') }}</a>
-                    <a href="/contact" class="menu-link">{{ __('Contact') }}</a>
+                    <a href="{{ route('home') }}" class="menu-link">{{ __('Home') }}</a>
+                    <a href="{{ route('home') }}#about-me" class="menu-link">{{ __('About me') }}</a>
+                    <a href="{{ route('home') }}#projects" class="menu-link">{{ __('Projects') }}</a>
+                    <a href="{{ route('contact') }}" class="menu-link">{{ __('Contact') }}</a>
                 </div>
 
                 <div class="menu-footer">
@@ -47,7 +47,7 @@
             </div>
 
             <div class="navbar-col-right col-lg-3 col-6">
-                <a href="/contact" class="contact-me-btn">{{ __('Contact Me') }}</a>
+                <a href="{{ route('contact') }}" class="contact-me-btn">{{ __('Contact Me') }}</a>
                 <div class="navbar-toggle">
                     <div class="line line-1"></div>
                     <div class="line line-transition line-2"></div>
@@ -97,10 +97,10 @@
                         </div>
                         <div class="footer-menu-col col-lg-6 col-md-12">
                             <div class="footer-menu">
-                                <a href="/" class="menu-link">{{ __('Home') }}</a>
-                                <a href="#about-me" class="menu-link">{{ __('About me') }}</a>
-                                <a href="#projects" class="menu-link">{{ __('Projects') }}</a>
-                                <a href="/contact" class="menu-link">{{ __('Contact') }}</a>
+                                <a href="{{ route('home') }}" class="menu-link">{{ __('Home') }}</a>
+                                <a href="{{ route('home') }}#about-me" class="menu-link">{{ __('About me') }}</a>
+                                <a href="{{ route('home') }}#projects" class="menu-link">{{ __('Projects') }}</a>
+                                <a href="{{ route('contact') }}" class="menu-link">{{ __('Contact') }}</a>
                             </div>
                             <div class="navbar-toggle">
                                 <div class="line line-1"></div>

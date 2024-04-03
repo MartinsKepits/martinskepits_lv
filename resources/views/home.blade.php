@@ -13,7 +13,7 @@
         <p>{{ __('I create beautiful things with love.') }}</p>
     </div>
 
-    <a href="#about-me" class="scroll-down-btn">
+    <a href="{{ route('home') }}#about-me" class="scroll-down-btn">
         <i class="fa-solid fa-angles-down"></i>
     </a>
 </div>
