@@ -16,14 +16,14 @@
         <div class="container-lg px-4">
             <div class="navbar-col-left col-lg-3 col-6">
                 <a href="{{ route('home') }}" class="navbar-logo">
-                    <img src="{{ url('storage/images/mk-logo.webp') }}" alt="Martins Kepits website logo" />
+                    <img src="{{ url('images/mk-logo.webp') }}" alt="Martins Kepits website logo" />
                 </a>
             </div>
 
             <div class="navbar-col-center col-lg-6">
                 <div class="menu-header px-4">
                     <a href="{{ route('home') }}" class="menu-logo">
-                        <img src="{{ url('storage/images/mk-logo.webp') }}" alt="Martins Kepits website logo" />
+                        <img src="{{ url('images/mk-logo.webp') }}" alt="Martins Kepits website logo" />
                     </a>
                     <div class="navbar-toggle">
                         <div class="line line-1"></div>
@@ -63,7 +63,7 @@
     </main>
 
     <footer class="footer">
-        <img class="footer-bg" src="{{ url('storage/images/footer-bg.webp') }}" alt="">
+        <img class="footer-bg" src="{{ url('images/footer-bg.webp') }}" alt="">
         <div class="footer-content">
             <div class="container-lg px-4">
                 <div class="row footer-row-one">
