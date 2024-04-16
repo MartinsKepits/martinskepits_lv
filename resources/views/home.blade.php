@@ -87,27 +87,14 @@
     <span class="recent-projects-title "><span class="tag-icon"></span>{{ __('My recent projects') }}</span>
 
     <div class="projects row">
-        <div class="project col-md-6">
+        <a href="https://visualdesign.lv/" target="_blank" class="project col-md-6">
             <div class="project-content">
+                <img src="{{ url('images/recent-projects/visualdesign_screenshot.webp') }}" alt="Visual Design Project">
                 <div class="overlay">
                     <h2 class="title">Visual Design</h2>
                 </div>
             </div>
-        </div>
-        <div class="project col-md-6">
-            <div class="project-content">
-                <div class="overlay">
-                    <h2 class="title">Magento Demo</h2>
-                </div>
-            </div>
-        </div>
-        <div class="project col-md-6">
-            <div class="project-content">
-                <div class="overlay">
-                    <h2 class="title">Larvel Demo</h2>
-                </div>
-            </div>
-        </div>
+        </a>
     </div>
 </div>
 @endsection
