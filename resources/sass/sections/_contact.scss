@@ -1,7 +1,7 @@
 .contact-wrapper {
     margin-top: 75px;
     margin-bottom: 90px;
-    height: calc(100vh - 75px);
+    min-height: calc(100vh - 75px);
     color: $primary_two_white;
 
     // Form Side
