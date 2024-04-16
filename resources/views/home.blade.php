@@ -29,7 +29,7 @@
         <div class="row">
             <div class="about-card col-lg-4">
                 <div class="card-icon">
-                    <img src="{{ url('images/languages.webp') }}">
+                    <img src="{{ url('images/languages.webp') }}" alt="Languages I speak icon">
                 </div>
                 <span class="card-title">{{ __('Languages I speak:') }}</span>
                 <ul class="card-list">
@@ -46,7 +46,7 @@
             </div>
             <div class="about-card col-lg-4">
                 <div class="card-icon">
-                    <img src="{{ url('images/frameworks.webp') }}">
+                    <img src="{{ url('images/frameworks.webp') }}" alt="Frameworks I have experience to work with icon">
                 </div>
                 <span class="card-title">{{ __('Frameworks I have experience to work with:') }}</span>
                 <ul class="card-list">
@@ -58,7 +58,7 @@
             </div>
             <div class="about-card col-lg-4">
                 <div class="card-icon">
-                    <img src="{{ url('images/tools.webp') }}">
+                    <img src="{{ url('images/tools.webp') }}" alt="Tools what I know how to use icon">
                 </div>
                 <span class="card-title">{{ __('Tools what I know how to use:') }}</span>
                 <ul class="card-list">
@@ -75,11 +75,11 @@
         <span class="projects-worked-on-title "><span class="tag-icon"></span>{{ __('Projects I have worked on') }}</span>
     </div>
     <div class="projects-worked-on-slider">
-        <img src="{{ url('images/logos/amf-logo.webp') }}" alt="Image 1">
-        <img src="{{ url('images/logos/balticsport-logo.webp') }}" alt="Image 2">
-        <img src="{{ url('images/logos/brew-company-logo.webp') }}" alt="Image 3">
-        <img src="{{ url('images/logos/deoveritas-logo.webp') }}" alt="Image 4">
-        <img src="{{ url('images/logos/lvm-logo.webp') }}" alt="Image 5">
+        <img src="{{ url('images/logos/amf-logo.webp') }}" alt="AM Furnitūra logo">
+        <img src="{{ url('images/logos/balticsport-logo.webp') }}" alt="Balticsport logo">
+        <img src="{{ url('images/logos/brew-company-logo.webp') }}" alt="The Brew Company logo">
+        <img src="{{ url('images/logos/deoveritas-logo.webp') }}" alt="Deoveritas logo">
+        <img src="{{ url('images/logos/lvm-logo.webp') }}" alt="Latvijas Valsts Meži logo">
     </div>
 </div>
 
