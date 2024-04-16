@@ -96,6 +96,15 @@
     }
 }
 
+@media (hover: none) {
+    .recent-projects-wrapper .projects .project .project-content {
+        .overlay,
+        .title {
+            opacity: 1;
+        }
+    }
+}
+
 @media (max-width: 992px) {
     .projects-worked-on-wrapper .projects-worked-on-slider img {
         max-width: 150px;
