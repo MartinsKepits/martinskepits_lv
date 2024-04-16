@@ -58,6 +58,6 @@
             </form>
         </div>
     </div>
-    <div class="col-md-4 contact-image-container" style="background-image: url({{ url('storage/images/contact-img.jpg') }})"></div>
+    <div class="col-md-4 contact-image-container" style="background-image: url({{ url('images/contact-img.jpg') }})"></div>
 </div>
 @endsection
