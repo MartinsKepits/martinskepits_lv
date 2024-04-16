@@ -5,6 +5,10 @@
     color: $primary_two_white;
 
     // Form Side
+    .contact-form-wrapper {
+        min-height: calc(100vh - 75px);
+    }
+
     .contact-form-container {
         padding: 90px 45px 45px 1.5rem;
         background-color: $primary_one_black;

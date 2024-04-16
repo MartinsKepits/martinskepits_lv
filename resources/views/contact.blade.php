@@ -4,7 +4,7 @@
 
 @section('content')
 <div class="contact-wrapper container-lg">
-    <div class="row h-100">
+    <div class="row contact-form-wrapper">
         <div class="col-md-8 contact-form-container">
             <h2 class="contact-heading">
                 <span class="heading-text">{{ __('Get In Touch') }}</span>
