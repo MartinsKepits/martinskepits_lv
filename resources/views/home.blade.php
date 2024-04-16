@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('title', 'Test')
+@section('title', '')
 
 @section('content')
 <div class="homepage-hero-wrapper">

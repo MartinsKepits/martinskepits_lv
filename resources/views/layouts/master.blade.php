@@ -4,8 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="{{ url('images/favicon.svg') }}">
 
-    <title>@yield('title')</title>
+    <title>@yield('title'){{ config('app.name') }}</title>
 
     <!-- Styles -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])

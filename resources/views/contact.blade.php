@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('title', 'Contact')
+@section('title', 'Contact | ')
 
 @section('content')
 <div class="contact-wrapper container-lg">
