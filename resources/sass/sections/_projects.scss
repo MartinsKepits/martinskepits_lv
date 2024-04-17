@@ -77,6 +77,14 @@
                     transition: transform 0.3s ease, opacity 0.3s ease;
                 }
 
+                .project-build-with {
+                    position: absolute;
+                    bottom: 15px;
+                    color: #fff;
+                    font-size: 14px;
+                    font-weight: 700;
+                }
+
                 &:hover {
                     .overlay {
                         opacity: 1;

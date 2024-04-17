@@ -110,7 +110,7 @@
                             </div>
                         </div>
                         <div class="footer-build-by-col col-lg-3 col-6 ">
-                            <span class="footer-build-by">{{ __('Build by')}} <span>Mārtiņš Ķepīts</span></span>
+                            <span class="footer-build-by">{{ __('Built with')}} <span>Laravel</span></span>
                         </div>
                     </div>
                 </div>

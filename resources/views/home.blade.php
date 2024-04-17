@@ -10,7 +10,7 @@
     </div>
 
     <div class="hero-content-wrapper">
-        <h1>{{ __('Frontend Developer, Great Coworker') }}</h1>
+        <h1>{{ __('Web Developer, Great Coworker') }}</h1>
         <p>{{ __('I create beautiful things with love.') }}</p>
     </div>
 
@@ -22,8 +22,8 @@
 <div id="about-me" class="about-me-wrapper">
     <div class="about-me-text container-lg px-4">
         <h2>{{ __('Hi, I’m Mārtiņš. Nice to meet you.') }}</h2>
-        <p>{{ __('Since 3 years ago when I started creating websites, online stores. 
-                    I have not forgotten that I do this to help large or small companies 
+        <p>{{ __('Since 2 years ago when I started creating websites, online stores. 
+                    I have not forgotten that I do this to help different companies 
                     to tell their story and take their company to a new level.') }}</p>
     </div>
     <div class="about-me-cards container">
@@ -93,6 +93,7 @@
                 <img src="{{ url('images/recent-projects/visualdesign_screenshot.webp') }}" alt="Visual Design Project">
                 <div class="overlay">
                     <h2 class="title">Visual Design</h2>
+                    <p class="project-build-with">{{ __('Built with')}} Wordpress</p>
                 </div>
             </div>
         </a>
