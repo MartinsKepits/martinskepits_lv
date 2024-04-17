@@ -6,6 +6,7 @@
 <div class="homepage-hero-wrapper">
     <div class="hero-bg-wrapper">
         <canvas class="hero-bg-grid" id="hero-bg-grid" width="500px" height="500px"></canvas>
+        <div class="hero-bg-overlay"></div>
     </div>
 
     <div class="hero-content-wrapper">

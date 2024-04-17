@@ -11,6 +11,10 @@
             touch-action: none;
             z-index: -1;
         }
+
+        .hero-bg-overlay {
+            display: none;
+        }
     }
 
     .hero-content-wrapper {
@@ -54,6 +58,17 @@
             background-color: $primary_two_yellow;
             color: $primary_one_black;
         }
+    }
+}
+
+@media (hover: none) {
+    .homepage-hero-wrapper .hero-bg-wrapper .hero-bg-overlay {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 }
 
