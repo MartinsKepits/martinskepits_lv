@@ -1,8 +1,8 @@
 @props(['url'])
 <tr>
-    <td class="header">
-        <a href="{{ $url }}" style="display: inline-block;">
-            <img src="{{ url('storage/images/mk-logo.webp') }}" class="logo" alt="Martins Kepits Logo">
-        </a>
-    </td>
+<td class="header">
+<a href="{{ $url }}" style="display: inline-block;">
+<img src="{{ url('images/mk-logo.webp') }}" alt="Mārtiņš Ķepīts website logo" />
+</a>
+</td>
 </tr>
