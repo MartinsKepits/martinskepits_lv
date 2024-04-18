@@ -27,11 +27,17 @@ class MailController extends Controller
         $email = $validated['email'];
         $message = $validated['message'];
 
-        $send_mail = env('MAIL_USERNAME');
+        $send_mail = "martinskepitslv@gmail.com";
 
-        Mail::to($send_mail)->send(new SendMail($name, $email, $message));
-        Mail::to($email)->send(new SendMessageToEndUser($name));
+        Mail::to($send_mail)
+            ->bcc($send_mail)
+            ->send(new SendMail($name, $email, $message));
+
+        Mail::to($email)
+            ->bcc($email)
+            ->send(new SendMessageToEndUser($name));
 
         return redirect()->to('/');
     }
 }
+
