@@ -71,7 +71,7 @@
     </div>
 </div>
 
-<div class="projects-worked-on-wrapper">
+<div id="projects" class="projects-worked-on-wrapper">
     <div class="container-lg px-4">
         <span class="projects-worked-on-title "><span class="tag-icon"></span>{{ __('Projects I have worked on') }}</span>
     </div>
