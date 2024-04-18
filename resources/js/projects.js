@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $(".projects-worked-on-slider").slick({
+    $("#projects-worked-on-slider").slick({
         infinite: true,
         slidesToShow: 4,
         autoplay: true,

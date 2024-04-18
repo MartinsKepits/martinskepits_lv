@@ -7,5 +7,5 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
-Route::get('/contact', [MailController::class,'mailForm'])->name('contact');
-Route::post ('/send-mail',[MailController::class,'mailData'])->name('send_mail');
+Route::get('/contact', [MailController::class, 'mailForm'])->name('contact');
+Route::post('/send-mail', [MailController::class, 'mailData'])->name('send_mail');

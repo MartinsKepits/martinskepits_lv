@@ -5,7 +5,7 @@
 @section('content')
 <div class="homepage-hero-wrapper">
     <div class="hero-bg-wrapper">
-        <canvas class="hero-bg-grid" id="hero-bg-grid" width="500px" height="500px"></canvas>
+        <canvas id="hero-bg-grid" class="hero-bg-grid" width="500px" height="500px"></canvas>
         <div class="hero-bg-overlay"></div>
     </div>
 
@@ -75,7 +75,7 @@
     <div class="container-lg px-4">
         <span class="projects-worked-on-title "><span class="tag-icon"></span>{{ __('Projects I have worked on') }}</span>
     </div>
-    <div class="projects-worked-on-slider">
+    <div id="projects-worked-on-slider" class="projects-worked-on-slider">
         <img src="{{ url('images/logos/amf-logo.webp') }}" alt="AM Furnitūra logo">
         <img src="{{ url('images/logos/balticsport-logo.webp') }}" alt="Balticsport logo">
         <img src="{{ url('images/logos/brew-company-logo.webp') }}" alt="The Brew Company logo">
@@ -84,7 +84,7 @@
     </div>
 </div>
 
-<div id="projects" class="recent-projects-wrapper container-lg px-4">
+<div class="recent-projects-wrapper container-lg px-4">
     <span class="recent-projects-title "><span class="tag-icon"></span>{{ __('My recent projects') }}</span>
 
     <div class="projects row">

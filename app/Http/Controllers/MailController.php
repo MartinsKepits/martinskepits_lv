@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Mail;
+use Illuminate\Support\Facades\Mail;
 use App\Mail\SendMail;
 use Illuminate\Http\Request;
 use App\Mail\SendMessageToEndUser;
@@ -10,12 +10,12 @@ use App\Http\Controllers\Controller;
 
 class MailController extends Controller
 {
-    public function mailform()
+    public function mailForm()
     {
         return view('contact');
     }
 
-    public function maildata(Request $request)
+    public function mailData(Request $request)
     {
         $validated = $request->validate([
             'name' => 'required|string|max:255',
@@ -40,4 +40,3 @@ class MailController extends Controller
         return redirect()->to('/');
     }
 }
-
