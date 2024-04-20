@@ -139,13 +139,6 @@ $(document).ready(function () {
         heroBgGrid.on("mouseleave", handleMouseLeave);
         heroBgGrid.on("touchend", handleMouseLeave);
 
-        $(window).on("resize", () => {
-            heroBgGrid[0].width = window.innerWidth;
-            heroBgGrid[0].height = window.innerHeight;
-            setGridDimensions();
-            createSignGrid();
-        });
-
         function dist([x1, y1], [x2, y2]) {
             const dx = x1 - x2;
             const dy = y1 - y2;
