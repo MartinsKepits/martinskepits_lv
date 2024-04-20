@@ -73,9 +73,15 @@
 }
 
 @media (max-width: 576px) {
-    .homepage-hero-wrapper .hero-content-wrapper p {
-        max-width: 275px;
-        margin: 0 auto;
+    .homepage-hero-wrapper {
+        .hero-content-wrapper p {
+            max-width: 275px;
+            margin: 0 auto;
+        }
+
+        .scroll-down-btn {
+            bottom: 90px;
+        }
     }
 }
 
