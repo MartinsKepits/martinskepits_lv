@@ -33,19 +33,8 @@ $(document).ready(function () {
         let gridHeight;
 
         function setGridDimensions() {
-            if (window.innerWidth > 1400) {
-                gridLength = 20;
-                gridHeight = 15;
-            } else if (window.innerWidth >= 798) {
-                gridLength = 10;
-                gridHeight = 10;
-            } else if (window.innerWidth >= 580) {
-                gridLength = 8;
-                gridHeight = 10;
-            } else {
-                gridLength = 5;
-                gridHeight = 11;
-            }
+            gridLength = Math.round(window.innerWidth / 75);
+            gridHeight = Math.round(window.innerHeight / 75);
         }
 
         setGridDimensions();
@@ -67,21 +56,10 @@ $(document).ready(function () {
                     sign.width = min / (gridLength * 2);
                     sign.height = min / (gridHeight * 2);
 
-                    if (window.innerWidth >= 798) {
-                        sign.left =
-                            (heroBgGrid[0].width / gridLength) * i +
-                            sign.width / 0.9;
-                        sign.top =
-                            (heroBgGrid[0].height / gridHeight) * j +
-                            sign.height / 0.9;
-                    } else {
-                        sign.left =
-                            (heroBgGrid[0].width / gridLength) * i +
-                            sign.width / 1.5;
-                        sign.top =
-                            (heroBgGrid[0].height / gridHeight) * j +
-                            sign.height / 0.7;
-                    }
+                    sign.left =
+                        (heroBgGrid[0].width / gridLength) * i + sign.width;
+                    sign.top =
+                        (heroBgGrid[0].height / gridHeight) * j + sign.height;
 
                     signs[i][j] = sign;
                 }
