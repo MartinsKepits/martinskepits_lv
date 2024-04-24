@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Rules\ReCaptchaV3;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\SendMail;
 use Illuminate\Http\Request;
@@ -21,6 +22,7 @@ class MailController extends Controller
             'name' => 'required|string|max:255',
             'email' => 'required|email|max:255',
             'message' => 'required|string|max:1000',
+            'g-recaptcha-response' => ['required', new ReCaptchaV3()]
         ]);
 
         $name = $validated['name'];
@@ -37,6 +39,6 @@ class MailController extends Controller
             ->bcc($email)
             ->send(new SendMessageToEndUser($name));
 
-        return redirect()->to('/');
+        return redirect()->back()->with('success-message', 'Thank you. Your message has been sent.');
     }
 }
