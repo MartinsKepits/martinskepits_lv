@@ -23,7 +23,7 @@
 <div id="about-me" class="about-me-wrapper">
     <div class="about-me-text container-lg px-4">
         <h2>{{ __('Hi, I’m Mārtiņš. Nice to meet you.') }}</h2>
-        <p>{{ __('Since 2 years ago when I started creating websites, online stores. 
+        <p>{{ __('Since 2 years ago when I started creating professionally websites, online stores. 
                     I have not forgotten that I do this to help different companies 
                     to tell their story and take their company to a new level.') }}</p>
     </div>
@@ -35,15 +35,17 @@
                 </div>
                 <span class="card-title">{{ __('Languages I speak:') }}</span>
                 <ul class="card-list">
+                    <li>PHP</li>
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>Sass / Less</li>
                     <li>Javascript</li>
                     <li>JQuery</li>
-                    <li>PHP</li>
-                    <li>Git</li>
-                    <li>Node.js</li>
+                    <li>KnockoutJS</li>
+                    <li>XML</li>
                     <li>Mysql</li>
+                    <li>Node.js</li>
+                    <li>Git</li>
                 </ul>
             </div>
             <div class="about-card col-lg-4">
