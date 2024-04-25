@@ -23,8 +23,7 @@
     .navbar-col-center {
         text-align: center;
 
-        .menu-header,
-        .menu-footer {
+        .menu-header {
             display: none;
         }
 
@@ -142,42 +141,11 @@
                 align-items: flex-start;
                 gap: 15px;
                 margin-top: 75px;
-                height: calc(100vh - 150px);
+                height: calc(100vh - 75px);
 
                 .menu-link {
                     text-align: left;
                     margin: 0;
-                }
-            }
-
-            .menu-footer {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items: center;
-                height: 75px;
-                border-top: 2px solid $primary_two_yellow;
-
-                a {
-                    text-decoration: none;
-                    color: $primary_two_yellow;
-                    text-transform: uppercase;
-                    font-weight: 900;
-                    font-size: 1.3rem;
-                    margin: 0 5px;
-                    transition: all 0.2s;
-                    border: 2px solid $primary_two_yellow;
-                    border-radius: 100px;
-                    width: 45px;
-                    height: 45px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-
-                    &:hover {
-                        color: $primary_one_black;
-                        background-color: $primary_two_yellow;
-                    }
                 }
             }
         }

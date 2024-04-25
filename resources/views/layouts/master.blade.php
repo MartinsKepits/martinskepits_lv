@@ -39,13 +39,6 @@
                     <a href="{{ route('home') }}#projects" class="menu-link">{{ __('Projects') }}</a>
                     <a href="{{ route('contact') }}" class="menu-link">{{ __('Contact') }}</a>
                 </div>
-
-                <div class="menu-footer">
-                    <a href="tel:+37126984195"><i class="fa-solid fa-phone"></i></a>
-                    <a href="mailto:martinskepitslv@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-                    <a href="https://www.linkedin.com/in/m%C4%81rti%C5%86%C5%A1-%C4%B7ep%C4%ABts-6a1a85245/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="https://github.com/MartinsKepits" target="_blank"><i class="fa-brands fa-github"></i></a>
-                </div>
             </div>
 
             <div class="navbar-col-right col-lg-3 col-6">
