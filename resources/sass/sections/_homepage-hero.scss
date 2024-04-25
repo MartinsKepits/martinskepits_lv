@@ -61,7 +61,7 @@
     }
 }
 
-@media (hover: none) {
+@media (hover: none) or (pointer: coarse) {
     .homepage-hero-wrapper .hero-bg-wrapper .hero-bg-overlay {
         display: block;
         width: 100%;

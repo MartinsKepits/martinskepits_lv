@@ -129,7 +129,7 @@
     }
 }
 
-@media (hover: none) {
+@media (hover: none) or (pointer: coarse) {
     .recent-projects-wrapper .projects .project .project-content {
         .overlay,
         .title {
