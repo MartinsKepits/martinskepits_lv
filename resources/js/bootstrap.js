@@ -13,3 +13,4 @@ window.gsap = window.gsap = gsap;
 
 window.slick = window.slick = slick;
 import "slick-carousel/slick/slick.scss";
+import "jquery-validation/dist/jquery.validate";

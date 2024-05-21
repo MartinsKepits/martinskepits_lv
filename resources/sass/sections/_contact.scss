@@ -95,7 +95,7 @@
                 color: $primary_two_white;
             }
 
-            &.is-invalid + .form-field-border {
+            &.error + .form-field-border {
                 background-color: $red;
             }
 
@@ -164,10 +164,14 @@
             }
         }
 
-        &:hover .arrow {
+        &:hover:enabled .arrow {
             width: 35px;
             margin-right: 5px;
             background: $primary_one_black;
+        }
+
+        &:disabled {
+            opacity: .7;
         }
     }
 

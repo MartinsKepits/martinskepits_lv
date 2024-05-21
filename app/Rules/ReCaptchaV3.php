@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Rules;
 
 use Closure;
@@ -23,20 +25,17 @@ class ReCaptchaV3 implements ValidationRule
      */
     public function validate(string $attribute, mixed $value, Closure $fail): void
     {
-        // Send a POST request to the google siteverify service to validate the
         $siteVerify = Http::asForm()
             ->post('https://www.google.com/recaptcha/api/siteverify', [
                 'secret' => config('services.recaptcha_v3.secretKey'),
                 'response' => $value,
             ]);
 
-        // This happens if google denied our request with an error
         if ($siteVerify->failed()) {
             $fail('Google reCAPTCHA was not able to verify the form, please try again.');
             return;
         }
 
-        // This means Google successfully processed our POST request. We still need to check the results!
         if ($siteVerify->successful()) {
             $body = $siteVerify->json();
 
@@ -46,15 +45,13 @@ class ReCaptchaV3 implements ValidationRule
                 return;
             }
 
-            // When this fails it means the action didn't match the one set in the button's data-action.
-            // Either a bot or a code mistake. Compare form data-action and value passed to $action (should be equal).
+            // Either a bot or a code mistake.
             if (!is_null($this->action) && $this->action != $body['action']) {
                 $fail('The action found in the form didn\'t match the Google reCAPTCHA action, please try again.');
                 return;
             }
 
             // If we set a minScore treshold, verify that the spam score didn't go below it
-            // More info can be found at: https://developers.google.com/recaptcha/docs/v3#interpreting_the_score
             if (!is_null($this->minScore) && $this->minScore > $body['score']) {
                 $fail('The Google reCAPTCHA verification score was too low, please try again.');
                 return;

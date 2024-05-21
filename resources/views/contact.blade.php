@@ -43,36 +43,41 @@
 
                 <div class="row">
                     <div class="col-md-6 mb-4 mb-md-0">
-                        <input id="name" class="form-field @error('name') is-invalid @enderror" name="name" type="text" placeholder="Name" autocomplete="off" value="{{ old('name') }}">
+                        <input id="name" class="form-field @error('name') error @enderror" name="name" type="text" placeholder="Name" autocomplete="off" value="{{ old('name') }}">
                         <span class="form-field-border"></span>
-                        @error('name')
-                        <div class="text-danger mt-2">{{ $message }}</div>
-                        @enderror
+                        <label for="name" generated="true" class="error text-danger mt-2">
+                            @error('name')
+                            {{ $message }}
+                            @enderror
+                        </label>
                     </div>
                     <div class="col-md-6">
-                        <input id="email" class="form-field @error('email') is-invalid @enderror" name="email" type="email" placeholder="Email" autocomplete="off" value="{{ old('email') }}">
+                        <input id="email" class="form-field @error('email') error @enderror" name="email" type="email" placeholder="Email" autocomplete="off" value="{{ old('email') }}">
                         <span class="form-field-border"></span>
-                        @error('email')
-                        <div class="text-danger mt-2">{{ $message }}</div>
-                        @enderror
+                        <label for="email" generated="true" class="error text-danger mt-2">
+                            @error('email')
+                            {{ $message }}
+                            @enderror
+                        </label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <textarea name="message" id="message" class="form-field @error('message') is-invalid @enderror" placeholder="Message" rows="2" value="{{ old('message') }}"></textarea>
+                        <textarea name="message" id="message" class="form-field @error('message') error @enderror" placeholder="Message" rows="2">{{ old('message') }}</textarea>
                         <span class="form-field-border"></span>
-                        @error('message')
-                        <div class="text-danger mt-2">{{ $message }}</div>
-                        @enderror
+                        <label for="message" generated="true" class="error text-danger mt-2">
+                            @error('message')
+                            {{ $message }}
+                            @enderror
+                        </label>
                     </div>
                 </div>
-                <button class="submit-btn g-recaptcha" type="submit" data-sitekey="{{ config('services.recaptcha_v3.siteKey') }}" data-callback="onSubmit" data-action="submitContact" disabled>{{ __('Send') }}<span class="arrow"></span></button>
+                <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
+                <button class="submit-btn">{{ __('Send') }}<span class="arrow"></span></button>
             </form>
-            <script src="https://www.google.com/recaptcha/api.js"></script>
+            <script src="https://www.google.com/recaptcha/api.js?render={{ config('services.recaptcha_v3.siteKey') }}"></script>
             <script>
-                function onSubmit(token) {
-                    document.getElementById("contact-form").submit();
-                }
+                window.recaptchaSiteKey = "{{ env('RECAPTCHA_V3_SITE_KEY') }}";
             </script>
         </div>
     </div>
