@@ -77,7 +77,7 @@
             </form>
             <script src="https://www.google.com/recaptcha/api.js?render={{ config('services.recaptcha_v3.siteKey') }}"></script>
             <script>
-                window.recaptchaSiteKey = "{{ env('RECAPTCHA_V3_SITE_KEY') }}";
+                window.recaptchaSiteKey = "{{ config('services.recaptcha_v3.siteKey') }}";
             </script>
         </div>
     </div>

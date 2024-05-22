@@ -44,7 +44,7 @@ class MailController extends Controller
         $email = $validated['email'];
         $message = $validated['message'];
 
-        $send_mail = env('MAIL_USERNAME',);
+        $send_mail = config('services.mail.to_address');
 
         Mail::to($send_mail)
             ->bcc($send_mail)

@@ -34,5 +34,8 @@ return [
         'siteKey' => env('RECAPTCHA_V3_SITE_KEY'),
         'secretKey' => env('RECAPTCHA_V3_SECRET_KEY'),
     ],
+    'mail' => [
+        'to_address' => env('MAIL_TO_ADDRESS'),
+    ],
 
 ];
