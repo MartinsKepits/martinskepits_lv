@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title', '')
-@section('description', 'Experienced website developer, Mārtiņš Ķepīts, specializes in creating stunning websites. With a passion for innovation and a keen eye for design, Mārtiņš is ready to take on new challenges. Hire Mārtiņš for your next project or job opportunity.')
+@section('description', 'Experienced web developer specializing in stunning, innovative websites. Ready to take on new challenges and opportunities. Hire for your next web project or job.')-
 
 @section('content')
 <div class="homepage-hero-wrapper">

@@ -1,16 +1,16 @@
 @extends('layouts.master')
 
 @section('title', 'Contact | ')
-@section('description', 'Experienced website developer, Mārtiņš Ķepīts, specializes in creating stunning websites. With a passion for innovation and a keen eye for design, Mārtiņš is ready to take on new challenges. Hire Mārtiņš for your next project or job opportunity.')
+@section('description', "Reach out to discuss your web development needs. Specializing in stunning, innovative websites, I'm ready for new challenges and opportunities.")
 
 @section('content')
 <div class="contact-wrapper container-lg">
     <div class="row contact-form-wrapper">
         <div class="col-md-8 contact-form-container">
-            <h2 class="contact-heading">
+            <h1 class="contact-heading">
                 <span class="heading-text">{{ __('Get In Touch') }}</span>
                 <span class="heading-divider"></span>
-            </h2>
+            </h1>
             <ul class="contact-info">
                 <li>
                     <a href="mailto:martinskepitslv@gmail.com">
